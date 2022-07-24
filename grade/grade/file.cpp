@@ -5,7 +5,6 @@
 #include <iostream>
 
 
-/*
 void CSV2Array(const char* fileName, Student students[DATASIZE]) {
 	char c1; //変換後の取得地
 	char* p1, * p2; //char型ポインタワーク
@@ -25,20 +24,20 @@ void CSV2Array(const char* fileName, Student students[DATASIZE]) {
 		while (fgets(s, BUFFSIZE, fp) != NULL) { //1行ずつ読み込む
 			p1 = strtok_s(s, delim, &ctx);
 
-			if (cntLINE > 0) { //1行目はスキップ
+			if (cntLINE > 3) { //3行目はスキップ
 				while (p1 != NULL) { //1列ずつ読み込む
 
 					if (cntROW == 0) { //ID
-						students[cntLINE - 1].id = atoi(p1);
+						students[cntLINE - 4].id = atoi(p1);
 						//printf("abc");
 					}
 
 					if (cntROW == 1) { //GPA
-						students[cntLINE - 1].gpa = atof(p1);
+						students[cntLINE - 4].gpa = atof(p1);
 					}
 
 					if (cntROW == 2) { //順位
-						students[cntLINE - 1].rank = atoi(p1);
+						students[cntLINE - 4].rank = atoi(p1);
 					}
 
 					p1 = strtok_s(NULL, delim, &ctx);
@@ -52,8 +51,9 @@ void CSV2Array(const char* fileName, Student students[DATASIZE]) {
 	}
 
 	//printf("%d\n", cntLINE-1);
-	size = cntLINE - 1;
+	size = cntLINE - 4;
 }
+
 
 void Array2CSV(const char* fileName, Student students[DATASIZE], int size) {
 	FILE* fp; //ファイルポインタの宣言
@@ -74,4 +74,3 @@ void Array2CSV(const char* fileName, Student students[DATASIZE], int size) {
 	}
 	fclose(fp);
 }
-*/

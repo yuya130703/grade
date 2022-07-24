@@ -4,10 +4,10 @@
 //生徒を表す構造体
 struct Student {
     //char name[BUFFLENGTH];
-    int id;
-    double gpa;
-    int rank;
-    double DS;
+    int id; //学籍番号
+    double gpa; //GPA
+    int rank; //順位
+    double DS; //偏差値
 };
 
 

@@ -1,4 +1,4 @@
 ﻿  grade.cpp
-C:\Users\yuya1\source\repos\grade\grade\grade.cpp(115,7): warning C4101: 'c1': ローカル変数は 1 度も使われていません。
-C:\Users\yuya1\source\repos\grade\grade\grade.cpp(116,14): warning C4101: 'p2': ローカル変数は 1 度も使われていません。
+C:\Users\yuya1\source\repos\grade\grade\grade.cpp(116,7): warning C4101: 'c1': ローカル変数は 1 度も使われていません。
+C:\Users\yuya1\source\repos\grade\grade\grade.cpp(117,14): warning C4101: 'p2': ローカル変数は 1 度も使われていません。
   grade.vcxproj -> C:\Users\yuya1\source\repos\grade\Debug\grade.exe
